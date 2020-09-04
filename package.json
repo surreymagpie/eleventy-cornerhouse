@@ -1,0 +1,13 @@
+{
+  "name": "eleventy-cornerhouse",
+  "version": "1.0.0",
+  "description": "A static site for a dental practice",
+  "main": "index.js",
+  "repository": "https://github.com/surreymagpie/eleventy-cornerhouse",
+  "author": "Rob Curtis",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  }
+}
