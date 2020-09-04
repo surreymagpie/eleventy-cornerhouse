@@ -9,6 +9,7 @@ git clone git@github.com:surreymagpie/eleventy-cornerhouse.git
 
 2. Download eleventy and any other dependencies
 ```
+cd eleventy-cornerhouse
 yarn
 ```
 
