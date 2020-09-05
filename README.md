@@ -15,5 +15,5 @@ yarn
 
 3. Build the site
 ```
-npx @11ty/eleventy --serve
+npm run serve
 ```
