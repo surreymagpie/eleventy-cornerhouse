@@ -4,3 +4,12 @@ layout: layouts/base.njk
 ---
 
 <h1>Hello World</h1>
+<ul>
+{% for item in collections.news %}
+  <li>
+    <a href="{{ item.url }}">{{ item.data.title }}</a>
+    <time datetime="{{ item.data.date }}">{{ item.data.date }}</time>
+    
+  </li>
+{% endfor %}
+</ul>
