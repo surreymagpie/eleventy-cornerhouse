@@ -7,11 +7,18 @@
   "author": "Rob Curtis",
   "license": "MIT",
   "private": false,
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "clean-css": "^4.2.3"
+  },
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0"
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.1.0"
   },
   "scripts": {
+    "clean": "rm -rf ./dist",
     "build": "npx eleventy",
-    "serve": "npx eleventy --serve"
+    "serve": "gulp & npx eleventy --serve"
   }
 }

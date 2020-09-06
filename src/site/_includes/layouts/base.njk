@@ -4,10 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
+  {% set css %}{% include 'assets/css/main.css' %}{% endset %}
+  <style>{{ css | cssmin | safe }}</style>
 </head>
 <body>
   <a href="/">Home</a>
   <h1>{{ title }}</h1>
   {{- content | safe }}
+  {% set js %}{% include 'assets/js/main.js' %}{% endset %}
+  <script>{{ js | safe }}</script>
 </body>
 </html>
