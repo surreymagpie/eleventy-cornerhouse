@@ -11,5 +11,7 @@
   <a href="/">Home</a>
   <h1>{{ title }}</h1>
   {{- content | safe }}
+  {% set js %}{% include 'assets/js/main.js' %}{% endset %}
+  <script>{{ js | safe }}</script>
 </body>
 </html>
