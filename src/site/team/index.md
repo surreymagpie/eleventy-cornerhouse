@@ -1,6 +1,9 @@
 ---
 title: "Our Team"
-eleventyExcludeFromCollections: true
+tags: false
+eleventyNavigation:
+  key: Team
+  order: 2
 ---
 
 Here you can find out about the members of staff in our practice.
