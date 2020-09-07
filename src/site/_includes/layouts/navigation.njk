@@ -1,0 +1,14 @@
+{% set navPages = collections.all | eleventyNavigation %}
+
+<nav class="navbar container">
+  <a href="/" class="logo">Logo</a>
+  
+  <ul class="primary-menu">
+    {% for item in navPages %}
+    <li class="menu-item{% if item.url == page.url %} menu-item--active{% endif %}">
+      <a href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  
+</nav>
