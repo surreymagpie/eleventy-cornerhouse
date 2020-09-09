@@ -1,0 +1,71 @@
+ <footer class="site__footer">
+	<div class="container">
+    <div class="footer-block">
+      <h2>Opening times</h2>  
+        <table class="opening-times">
+          <thead>
+            <tr>
+              <th class="day">Day</th>
+              <th class="time">Morning</th>
+              <th class="time">Afternoon</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="day">Monday</td>
+              <td class="time">0830 - 1300</td>
+              <td class="time">1400 - 1700</td>
+            </tr>
+            <tr>
+              <td class="day">Tuesday</td>
+              <td class="time">0830 - 1300</td>
+              <td class="time">1400 - 1700</td>
+            </tr>
+            <tr>
+              <td class="day">Wednesday</td>
+              <td class="time">0830 - 1300</td>
+              <td class="time">1400 - 1700</td>
+          </tr>
+          <tr>
+            <td class="day">Thursday</td>
+            <td class="time">0830 - 1300</td>
+            <td class="time">1400 - 1700</td>
+          </tr>
+          <tr>
+            <td class="day">Friday</td>
+            <td class="time">0830 - 1300</td>
+            <td class="time">1400 - 1700</td>
+          </tr>
+          <tr>
+            <td class="day">Saturday</td>
+            <td class="time" colspan="2">Closed</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="footer-block">
+      <h2>Address</h2>
+      <p>2 School Road<br />
+        Ashford<br />
+        Middlesex<br />
+        TW15 2BW<br />
+        United Kingdom</p>
+      <p>Phone: (01784) 253140</p>
+    </div>
+    <div class="footer-block">
+      <h2>Links</h2>
+      <ul>
+      {% for entry in collections.footer %}
+        <li><a href="{{ entry.url }}">{{ entry.data.title }}</a></li>
+      {% endfor %}
+        <li class="last leaf">
+          <a href="/sitemap.xml" title="">Sitemap</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="colophon">
+      <span class="copyright">&copy; 2020 Cornerhouse Dental Practice.</span>
+      <span>Registered as a limited company in England and Wales under company number: 06482316</span>
+  </div>
+</footer> <!-- /.site__footer -->

@@ -15,6 +15,7 @@
     <h1>{{ title }}</h1>
     {{- content | safe }}
   </main>
+  {% include 'layouts/footer.njk' %}
   {% set js %}{% include 'assets/js/main.js' %}{% endset %}
   <script>{{ js | safe }}</script>
 </body>
