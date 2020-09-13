@@ -26,6 +26,8 @@ module.exports = function(eleventyConfig) {
       return treatmentCategories;
   });
 
+  eleventyConfig.addPassthroughCopy({ "src/site/_includes/assets/icons": "." });
+
   return {
     markdownTemplateEngine: "njk",
     dir: {
