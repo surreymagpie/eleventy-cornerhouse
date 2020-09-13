@@ -13,14 +13,21 @@
   <style>{{ css | cssmin | safe }}</style>
 </head>
 <body>
-  <header class="page-header">
+  <header class="site__header">
     {%- include 'layouts/navigation.njk' %}
   </header>
-  <main id="main-content" class="main-content container">
-    <h1>{{ title }}</h1>
-    {{- content | safe }}
-  </main>
+
+  <section class="site__body">
+  {% block content %}
+    <main id="main-content" class="main-content container">
+      <h1>{{ title }}</h1>
+      {{- content | safe }}
+    </main>
+  {% endblock %}
+  </section>
+
   {% include 'layouts/footer.njk' %}
+
   {% set js %}{% include 'assets/js/main.js' %}{% endset %}
   <script>{{ js | safe }}</script>
 </body>
