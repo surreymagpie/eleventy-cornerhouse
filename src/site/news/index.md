@@ -8,7 +8,7 @@ eleventyNavigation:
 The most recent news articles are listed below.
 
 <ul>
-{% for item in collections.news %}
+{% for item in collections.news | reverse %}
   <li>
     <a href="{{ item.url }}">{{ item.data.title }}</a>
     <time datetime="{{ item.data.date }}">{{ item.data.date }}</time>

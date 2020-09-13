@@ -6,7 +6,7 @@ eleventyNavigation:
   order: 3
 ---
 
-{{< map >}}
+<div id="map"></div>
 
 The practice is located at the corner of School Road and Feltham Hill Road in Ashford, Middlesex. Our full address is:
 
