@@ -8,6 +8,24 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
+  eleventyConfig.addCollection("treatmentCategories", collection => {
+      let treatmentCategories = new Map();
+
+      collection
+        .getFilteredByTag("treatment")
+        .filter( item => {
+          item.data.categories.forEach(category => {
+
+            if ( ! treatmentCategories.has(category)) {
+              treatmentCategories.set(category, new Array)
+            }
+
+            treatmentCategories.get(category).push(item);
+          });
+        });
+      return treatmentCategories;
+  });
+
   return {
     dir: {
       input: "src/site",
