@@ -32,6 +32,8 @@ body {
   min-height: 100vh;
   line-height: 1.6;
   text-rendering: optimizeSpeed;
+  font-size: 16px;
+  font-size: 1rem;
 }
 
 body,
@@ -81,6 +83,30 @@ select {
  * BASE
  * Headings.............H1–H6 styles.
  */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 1em;
+  margin-bottom: 0.25em;
+}
+
+h1 {
+  font-size: 40px;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
 /**
  *
  * OBJECTS
