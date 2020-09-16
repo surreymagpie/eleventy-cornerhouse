@@ -4,19 +4,7 @@ tags: false
 eleventyNavigation:
   key: Treatment
   order: 4
-templateEngineOverride: njk,md
 ---
-
-<aside class="treatment-list">
-{% for category,pages in collections.treatmentCategories %}
-<h3 class="treatment-category">{{ category }}</h3>
-<ul class="treatment-items">
-  {% for page in pages %}
-  <li class="treatment-item"><a href="{{ page.url }}">{{ page.data.title }}</a></li>
-  {% endfor -%}
-</ul>
-{% endfor -%}
-</aside>
 
 These pages provide you with some information about the types of dental treatment which are available.
 

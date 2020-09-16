@@ -1,6 +1,5 @@
 ---
 title: About Us
-layout: layouts/base.njk
 eleventyNavigation:
   key: About Us
   order: 0

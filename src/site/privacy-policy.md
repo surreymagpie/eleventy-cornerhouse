@@ -1,6 +1,5 @@
 ---
 title: "Privacy policy"
-layout: layouts/base.njk
 tags: footer
 ---
 

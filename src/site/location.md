@@ -1,6 +1,5 @@
 ---
 title: "Location"
-layout: layouts/base.njk
 eleventyNavigation:
   key: Location
   order: 3
