@@ -1,0 +1,14 @@
+<div class="featured-image__container">
+<img src="{{ site.cloudinary_base_url }}image/upload/ar_16:9,c_fill/w_360/{{ featuredImage }}"
+     srcset="{{ site.cloudinary_base_url }}image/upload/ar_16:9,c_fill/w_360/{{ featuredImage }} 360w,
+             {{ site.cloudinary_base_url }}image/upload/ar_16:9,c_fill/w_480/{{ featuredImage }} 480w,
+             {{ site.cloudinary_base_url }}image/upload/ar_16:9,c_fill/w_600/{{ featuredImage }} 600w,
+             {{ site.cloudinary_base_url }}image/upload/ar_16:9,c_fill/w_720/{{ featuredImage }} 720w,
+             {{ site.cloudinary_base_url }}image/upload/ar_16:9,c_fill/w_840/{{ featuredImage }} 840w,
+             {{ site.cloudinary_base_url }}image/upload/ar_16:9,c_fill/w_960/{{ featuredImage }} 960w,
+             {{ site.cloudinary_base_url }}image/upload/ar_16:9,c_fill/w_1080/{{ featuredImage }} 1080w,
+             {{ site.cloudinary_base_url }}image/upload/ar_16:9,c_fill/w_1200/{{ featuredImage }} 1200w"
+     sizes="100vw" height="200px"
+     alt="{{ altText }}"
+     class="featured-image" />
+</div>

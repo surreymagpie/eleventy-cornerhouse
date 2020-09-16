@@ -1,4 +1,5 @@
 {
   "name": "Cornerhouse Dental Practice",
-  "slogan": "Friendly family dental care"
+  "slogan": "Friendly family dental care",
+  "cloudinary_base_url": "https://res.cloudinary.com/dafweg6k8/"
 }
