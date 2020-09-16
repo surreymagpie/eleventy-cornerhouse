@@ -1,6 +1,5 @@
 ---
 title: Contact
-layout: layouts/base.njk
 tags: footer
 eleventyNavigation:
   key: Contact

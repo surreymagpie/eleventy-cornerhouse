@@ -19,7 +19,7 @@
   {% set css %}{% include 'assets/css/main.css' %}{% endset %}
   <style>{{ css | cssmin | safe }}</style>
 </head>
-<body>
+<body class="{% if featuredImage %}has-featured-image{% endif %}">
   <header class="site__header">
     {%- include 'layouts/navigation.njk' %}
   </header>

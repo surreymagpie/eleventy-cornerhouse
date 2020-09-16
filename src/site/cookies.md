@@ -1,6 +1,5 @@
 ---
 title: "Cookies"
-layout: layouts/base.njk
 tags: footer
 ---
 

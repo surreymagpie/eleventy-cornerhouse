@@ -1,6 +1,5 @@
 ---
 title: Feedback
-layout: layouts/base.njk
 eleventyNavigation:
   key: Feedback
   order: 4

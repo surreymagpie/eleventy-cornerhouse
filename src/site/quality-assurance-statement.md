@@ -1,6 +1,5 @@
 ---
 title: "Quality Assurance Statement"
-layout: layouts/base.njk
 tags: footer
 ---
 
