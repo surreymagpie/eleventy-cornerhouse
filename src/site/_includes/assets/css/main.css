@@ -167,6 +167,21 @@ h1 {
   display: block;
 }
 
+.primary-menu__link {
+  text-decoration: none;
+  display: inline-block;
+  padding: .75em 1em;
+  color: inherit;
+  border-bottom: 3px solid transparent;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+.primary-menu__link:hover, .primary-menu__link:focus, .primary-menu__link.active {
+  border-bottom: 3px solid orange;
+  font-weight: 700;
+}
+
 .menu-toggle {
   padding: 0;
   position: absolute;

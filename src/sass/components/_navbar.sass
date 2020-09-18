@@ -29,6 +29,20 @@
     &.primary-menu--open
       display: block
 
+.primary-menu__link
+  text-decoration: none
+  display: inline-block
+  padding: .75em 1em
+  color: inherit
+  border-bottom: 3px solid transparent
+  @include font-size($h4)
+
+  &:hover,
+  &:focus,
+  &.active
+    border-bottom: 3px solid orange
+    font-weight: 700
+
 .menu-toggle
   padding: 0
   position: absolute
