@@ -135,6 +135,22 @@ h1 {
   height: 5em;
 }
 
+.no-js .menu-toggle {
+  display: none;
+}
+
+.js .menu-toggle {
+  display: inline-block;
+}
+
+.js .primary-menu {
+  display: none;
+}
+
+.js .primary-menu.primary-menu--open {
+  display: block;
+}
+
 .featured-image__container {
   width: 100%;
   height: 0;

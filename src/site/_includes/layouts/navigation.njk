@@ -5,7 +5,11 @@
   <svg><use href="/icons.svg#logo" /></svg>
   </a>
   
-  <ul class="primary-menu">
+  <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="primary-menu">
+    Menu
+  </button>
+
+  <ul id="primary-menu" class="primary-menu" >
     {% for item in navPages %}
     <li class="primary-menu__item{% if item.url == page.url %} primary-menu__item--active{% endif %}">
       <a  href="{{ item.url }}"
