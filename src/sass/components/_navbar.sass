@@ -1,8 +1,12 @@
+.site__header
+  position: relative
+  
 .navbar
   text-align: center
 
 .logo
   display: block
+  margin-right: 3em
   padding: 1em
   fill: #5080f0
 
@@ -24,3 +28,51 @@
 
     &.primary-menu--open
       display: block
+
+.menu-toggle
+  padding: 0
+  position: absolute
+  top: 0.75em
+  right: 1em
+  appearance: none
+  border: none
+  height: 32px
+  width: 32px
+  cursor: pointer
+  background-color: transparent
+
+  &:focus
+    outline: none
+
+.burger,
+.burger::before,
+.burger::after
+  display: block
+  width: 32px
+  height: 8px
+  background-color: #5080f0
+  transition: transform 450ms ease-in , background-color 450ms ease 150ms
+  
+.burger
+  position: relative
+
+  &::after,
+  &::before
+    content: ''
+    position: absolute
+
+  &::before
+    top: -12px
+
+  &::after
+    top: 12px
+
+[aria-expanded="true"] .burger
+  transform: translateX(32px)
+  background-color: transparent
+
+[aria-expanded="true"] .burger::before
+  transform: translate(-32px,12px) rotate(45deg)
+
+[aria-expanded="true"] .burger::after
+  transform: translate(-32px, -12px) rotate(-45deg)
