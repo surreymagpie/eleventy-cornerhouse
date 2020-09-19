@@ -137,6 +137,7 @@ h1 {
 
 .navbar {
   text-align: center;
+  overflow: hidden;
 }
 
 .logo {
@@ -160,11 +161,18 @@ h1 {
 }
 
 .js .primary-menu {
-  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  z-index: 3;
+  background-color: #fff;
+  transition: left 450ms ease-in-out;
 }
 
 .js .primary-menu.primary-menu--open {
-  display: block;
+  left: 0;
 }
 
 .primary-menu__link {
@@ -193,10 +201,15 @@ h1 {
   width: 32px;
   cursor: pointer;
   background-color: transparent;
+  z-index: 4;
 }
 
 .menu-toggle:focus {
   outline: none;
+}
+
+.menu-toggle[aria-expanded="true"] {
+  position: fixed;
 }
 
 .burger,
