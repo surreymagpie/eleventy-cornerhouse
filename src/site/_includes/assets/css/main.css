@@ -10,6 +10,15 @@
  * TOOLS
  * Mixins...............Useful mixins.
  */
+@keyframes expand {
+  0% {
+    clip-path: circle(0);
+  }
+  100% {
+    clip-path: circle(100%);
+  }
+}
+
 /**
  *
  * GENERIC
@@ -71,11 +80,13 @@ article > * + * {
   margin-top: 1em;
 }
 
+a,
 input,
 button,
 textarea,
 select {
   font: inherit;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 /**
@@ -112,6 +123,26 @@ h1 {
  * OBJECTS
  * Wrappers.............Wrapping and constraining elements.
  */
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1044px;
+}
+
+.container--wide {
+  max-width: 1440px;
+}
+
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+}
+
 /**
  *
  * COMPONENTS
@@ -120,6 +151,160 @@ h1 {
  * Buttons..............Button elements.
  */
 /** */
+.site__header {
+  position: relative;
+}
+
+.navbar {
+  text-align: center;
+  overflow: hidden;
+  padding: 1rem 0;
+}
+
+.logo {
+  display: inline-block;
+  margin-right: 3em;
+  vertical-align: bottom;
+  max-width: 300px;
+  fill: #5080f0;
+}
+
+.logo svg {
+  display: block;
+  max-width: 100%;
+  height: 5em;
+}
+
+.no-js .menu-toggle {
+  display: none;
+}
+
+.js .menu-toggle {
+  display: block;
+}
+
+.js .primary-menu {
+  width: 20rem;
+  max-width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -20rem;
+  z-index: 3;
+  background-color: #fff;
+  transition: right 450ms ease-in-out;
+}
+
+.js .primary-menu.primary-menu--open {
+  right: 0;
+}
+
+.primary-menu__link {
+  display: inline-block;
+  padding: 1rem;
+  position: relative;
+  color: #585a60;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu-toggle {
+  padding: 0;
+  position: absolute;
+  top: 0.75em;
+  right: 1em;
+  appearance: none;
+  border: none;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  background-color: transparent;
+  z-index: 4;
+}
+
+.menu-toggle:focus {
+  outline: none;
+}
+
+.menu-toggle[aria-expanded="true"] {
+  position: fixed;
+}
+
+.burger,
+.burger::before,
+.burger::after {
+  display: block;
+  width: 32px;
+  height: 8px;
+  background-color: #5080f0;
+  transition: transform 450ms ease-in , background-color 450ms ease 150ms;
+}
+
+.burger {
+  position: relative;
+}
+
+.burger::after, .burger::before {
+  content: '';
+  position: absolute;
+}
+
+.burger::before {
+  top: -12px;
+}
+
+.burger::after {
+  top: 12px;
+}
+
+[aria-expanded="true"] .burger {
+  transform: translateX(32px);
+  background-color: transparent;
+}
+
+[aria-expanded="true"] .burger::before {
+  transform: translate(-32px, 12px) rotate(45deg);
+}
+
+[aria-expanded="true"] .burger::after {
+  transform: translate(-32px, -12px) rotate(-45deg);
+}
+
+@media screen and (min-width: 52rem) {
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+  .logo {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+  .js .menu-toggle {
+    display: none;
+  }
+  .js .primary-menu {
+    position: static;
+    display: inline-flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+  }
+  .primary-menu__link:hover::after, .primary-menu__link:focus::after, .primary-menu__link.active::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: orange;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    animation: expand 800ms;
+  }
+}
+
 .featured-image__container {
   width: 100%;
   height: 0;

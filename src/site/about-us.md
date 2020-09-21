@@ -1,7 +1,7 @@
 ---
 title: About Us
 eleventyNavigation:
-  key: About Us
+  key: About
   order: 0
 ---
 
