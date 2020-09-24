@@ -10,12 +10,14 @@
   
   {% for item in collections.news | reverse %}
     <li class="article-single">
-    <header>
-      <h2><a href="{{ item.url }}">{{ item.data.title }}</a></h2>
-      <time datetime="{{ item.data.date | machineDate }}">{{ item.data.date | humanDate }}</time>
-    </header>
-    <div class="excerpt">{% if item.data.page.excerpt %}{{ item.data.page.excerpt }}{% endif %}</div>
-    <a class="btn btn-primary" href="{{ item.url }}">Read more...</a>
+      <header>
+        <h2><a href="{{ item.url }}">{{ item.data.title }}</a></h2>
+        <time datetime="{{ item.data.date | machineDate }}">{{ item.data.date | humanDate }}</time>
+      </header>
+      <div class="excerpt">{% if item.data.page.excerpt %}{{ item.data.page.excerpt }}{% endif %}</div>
+      <footer>
+        <a class="btn btn-primary" href="{{ item.url }}">Read more</a>
+      </footer>
     </li>
   {% endfor %}
 
