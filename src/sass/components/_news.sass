@@ -1,0 +1,22 @@
+ul.article-list
+  display: grid
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
+  gap: 3rem 3rem
+  margin-top: 3rem
+  margin-bottom: 3rem
+
+.article-single
+  display: flex
+  flex-direction: column
+
+  h2
+    margin: 0
+  
+  time
+    @include font-size($small)
+  
+  .excerpt
+    margin-top: 1.5rem
+
+  .btn
+    margin-top: auto
