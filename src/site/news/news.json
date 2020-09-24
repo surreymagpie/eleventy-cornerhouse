@@ -1,5 +1,5 @@
 {
   "author": "Rob Curtis",
   "tags": "news",
-  "layout": "layouts/base.njk"
+  "layout": "layouts/post.njk"
 }

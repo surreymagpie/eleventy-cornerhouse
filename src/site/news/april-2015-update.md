@@ -3,7 +3,9 @@ title: "April 2015 Update"
 date: "2015-04-01"
 ---
 
-Today is the start of the new NHS year and as always there are some changes to advise our patients. Firstly for any courses of treatment starting from today, new NHS charges will apply. These are:
+Today is the start of the new NHS year and as always there are some changes to advise our patients.
+<!-- excerpt -->
+Firstly for any courses of treatment starting from today, new NHS charges will apply. These are:
 
 - Band 1: £18.80
 - Band 2: £51.30

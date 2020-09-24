@@ -6,7 +6,7 @@ date: "2015-07-31"
 The NHS introduced the “Friends and Family Test” for dental practices in April 2015.
 
 Since the 1st April, patients have an option to fill in a card after completing their course of NHS treatment and place it in a box in reception.
-
+<!-- excerpt -->
 The only required question to be answered is: __“How likely are you to recommend our dental practice to friends and family if they needed similar care or treatment?”__ with answers ranging from “Extremely likely” to “Extremely unlikely”.
 
 There are also some optional questions regarding the person giving the feedback and any comment they would like to make. NB: The free comments and biographical information is not shared outside the practice.

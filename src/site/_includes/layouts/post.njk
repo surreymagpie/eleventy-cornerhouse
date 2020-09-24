@@ -1,0 +1,16 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+    {% if featuredImage %}
+        {% include 'layouts/responsive-image.njk' %}
+    {% endif%}
+  <main id="main-content" class="main-content container">
+  <article>
+    <header class="article-header">
+    <h1>{{ title }}</h1>
+    <small class="small">Posted by {{ author }} on <time datetime="{{- date | machineDate -}}">{{- date | humanDate -}}</time></small>
+    </header>
+    {{- content | safe }}
+  </article>
+  </main>
+{% endblock %}

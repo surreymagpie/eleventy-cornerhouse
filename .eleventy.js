@@ -1,9 +1,28 @@
 const CleanCSS = require("clean-css");
+const { DateTime } = require('luxon');
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addFilter("cssmin", function(code) {
+  eleventyConfig.addFilter("cssmin", (code) => {
     return new CleanCSS({}).minify(code).styles;
+  });
+  
+  eleventyConfig.addFilter("humanDate", (date) => {
+    dt = DateTime.fromISO(date);
+    return dt.setLocale('en-GB').toLocaleString({
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    });
+  });
+
+  eleventyConfig.addFilter("machineDate", (date) => {
+    return dt = DateTime.fromISO(date);
+  });
+
+  eleventyConfig.setFrontMatterParsingOptions({
+    excerpt_separator: "<!-- excerpt -->",
+    excerpt: true
   });
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin);

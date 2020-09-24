@@ -4,7 +4,7 @@ date: "2016-05-01"
 ---
 
 Most people these days are aware of the need to clean thoroughly twice daily to keep your teeth and gums healthy but how many actually do?
-
+<!-- excerpt -->
 As well as brushing for a minimum of two minutes, dentists recommend cleaning between your teeth each day. While flossing has long been the 'gold standard' method of cleaning between your teeth, it is a difficult skill to master. Incorrect technique can cause sore and swollen gums. Many patients have begun with good intentions in the past only to give up after a few days because it is time-consuming and painful.
 
 More and more these days, at Cornerhouse Dental Practice, we are recommending people use interdental brushes instead. These small brushes are simply pushed through the small triangular space that exists between a pair of teeth. Once through, a few seconds of scrubbing backwards and forwards is used to dislodge plaque and food debris. Done regularly, this will reduce gingivitis, stop gum bleeding and also help protect you from tooth decay.
