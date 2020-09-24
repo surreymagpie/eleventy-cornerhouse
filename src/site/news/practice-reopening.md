@@ -6,7 +6,7 @@ date: "2020-07-07"
 **Updated: 6 August 2020**
 
 The practice reopened on 1st July after the closure enforced by the coronavirus pandemic.
-
+<!-- excerpt -->
 Our priority is, of course, the protection of both our staff and our patients. We will have new ways of working which will significantly limit the number of patients entering the practice at any one time to allow some social distancing. We have additional PPE and infection control protocols in place.
 
 In the very beginning, we were unable to provide any treatment which might generate aerosols so no using the 'drill' or scaler. We required fit-testing of high-filtration masks before we are able to provide any more complex treatments

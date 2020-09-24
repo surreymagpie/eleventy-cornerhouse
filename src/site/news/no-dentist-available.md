@@ -4,7 +4,7 @@ date: "2014-06-12"
 ---
 
 Patients are advised that there will be a number of days this summer where there will be no dentists available at the practice. The dates in question are as follows:
-
+<!-- excerpt -->
 - Friday, 27th June 2014 (1 day)
 - Monday, 4th August to Friday, 8th August 2014 (5 days)
 
