@@ -20,6 +20,11 @@ module.exports = function(eleventyConfig) {
     return dt = DateTime.fromISO(date);
   });
 
+  eleventyConfig.setFrontMatterParsingOptions({
+    excerpt_separator: "<!-- excerpt -->",
+    excerpt: true
+  });
+
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   eleventyConfig.addCollection("treatmentCategories", collection => {
