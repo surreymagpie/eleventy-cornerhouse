@@ -8,7 +8,7 @@
   <article>
     <header class="article-header">
     <h1>{{ title }}</h1>
-    <small class="small">Posted by {{ author }} on <time>{{- date |-}}</time></small>
+    <small class="small">Posted by {{ author }} on <time datetime="{{- date | machineDate -}}">{{- date | humanDate -}}</time></small>
     </header>
     {{- content | safe }}
   </article>
