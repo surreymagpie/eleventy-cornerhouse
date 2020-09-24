@@ -1,5 +1,6 @@
 ---
 title: Recent articles
+layout: layouts/page.njk
 tags: false
 eleventyNavigation:
   key: News
