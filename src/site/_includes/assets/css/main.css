@@ -385,6 +385,16 @@ ul.article-list {
   margin-top: 1em;
 }
 
+.map {
+  height: 360px;
+}
+
+.map-wrapper {
+  width: 100vw;
+  margin-left: calc( 50% - 50vw);
+  margin-right: calc( 50% - 50vw);
+}
+
 /**
  * TRUMPS
  * Text.................Text helpers.
