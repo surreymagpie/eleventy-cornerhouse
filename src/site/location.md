@@ -4,16 +4,17 @@ eleventyNavigation:
   key: Location
   order: 3
 ---
-
-<div id="map"></div>
+<div class="map-wrapper">
+  <div id="map" class="map"></div>
+</div>
 
 The practice is located at the corner of School Road and Feltham Hill Road in Ashford, Middlesex. Our full address is:
 
->Cornerhouse Dental Practice  
->2 School Road  
->Ashford  
->Middlesex  
->TW15 2BW
+> Cornerhouse Dental Practice  
+> 2 School Road  
+> Ashford  
+> Middlesex  
+> TW15 2BW
 
 ### By car
 If travelling by car, parking is normally easy to find in the service roads along the opposite side of School Road or close to the shops at the end of Convent Road.
@@ -35,5 +36,7 @@ We are well-served by local buses. The 216, 290, and 555 routes all pass by the 
 
 ### By rail
 Ashford (Surrey) railway station is approximately 1 mile away so is about 15-20 minutes walk, served by South Western Railways services between London Waterloo and Windsor or Weybridge.
-Sunbury station is around two miles away but connection with the 216 and 290 buses at Sunbury Cross is possible.
+
+Sunbury station is around two miles away and connection with the 216 and 290 buses at Sunbury Cross is possible.
+
 Check for train times on the [National Rail website](https://www.nationalrail.co.uk/).
