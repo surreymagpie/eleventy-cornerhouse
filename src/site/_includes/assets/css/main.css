@@ -310,6 +310,7 @@ h1 {
     align-items: center;
     width: auto;
     height: auto;
+    gap: 0.5em;
   }
   .primary-menu__link:hover::after, .primary-menu__link:focus::after, .primary-menu__link.active::after {
     content: '';
