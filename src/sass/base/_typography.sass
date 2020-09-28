@@ -4,23 +4,40 @@ body
     weight: 400
   color: $clr-base-text
 
+article > * + *
+  margin-top: 1em
+
 h1,
 h2,
 h3,
-h4,
-h5,
-h6
+h4
   font:
     family: $heading-font-family
     weight: 700
   line-height: 1.1
-  margin-top: 1em
-  margin-bottom: 0.25em
+  margin-top: 1.5rem
+
+  & + p
+    margin-top: 0
+    font-size: 1.2em
+    letter-spacing: -0.5px
 
 h1
   @include font-size($h1)
   font-weight: 900
 
+h2
+  @include font-size($h2)
+
+h3
+  @include font-size($h3)
+
+h4
+  @include font-size($h4)
+
 blockquote
   padding-left: 1.5rem
   border-left: 3px solid $clr-accent
+
+small
+  @include font-size($small)
