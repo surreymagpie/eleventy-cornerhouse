@@ -166,6 +166,11 @@ thead {
   white-space: nowrap;
 }
 
+.full-width {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
 /**
  *
  * COMPONENTS
@@ -414,8 +419,6 @@ ul.article-list {
 
 .map-wrapper {
   width: 100vw;
-  margin-left: calc( 50% - 50vw);
-  margin-right: calc( 50% - 50vw);
 }
 
 /**

@@ -4,7 +4,7 @@ eleventyNavigation:
   key: Location
   order: 3
 ---
-<div class="map-wrapper">
+<div class="map-wrapper full-width">
   <div id="map" class="map"></div>
 </div>
 
