@@ -124,6 +124,23 @@ blockquote {
   border-left: 3px solid #ff4500;
 }
 
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover, a:focus, a:active,
+a:visited:hover,
+a:visited:focus,
+a:visited:active {
+  text-decoration-color: #ff4500;
+  text-decoration-line: underline;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: from-font;
+  text-underline-offset: 3px;
+}
+
 table {
   margin-top: 2rem;
   margin-bottom: 3rem;
