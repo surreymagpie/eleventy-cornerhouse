@@ -97,6 +97,7 @@ select {
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
+  color: #2d364d;
 }
 
 h1,
@@ -116,6 +117,11 @@ h1 {
   font-size: 40px;
   font-size: 2.5rem;
   font-weight: 900;
+}
+
+blockquote {
+  padding-left: 1.5rem;
+  border-left: 3px solid #ff4500;
 }
 
 table {
@@ -333,7 +339,7 @@ thead {
     content: '';
     display: block;
     position: absolute;
-    background-color: orange;
+    background-color: #ff4500;
     width: 100%;
     height: 4px;
     left: 0;
