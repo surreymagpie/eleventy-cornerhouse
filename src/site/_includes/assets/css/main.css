@@ -383,6 +383,9 @@ thead {
     height: auto;
     gap: 0.5em;
   }
+  .primary-menu__link:hover, .primary-menu__link:focus, .primary-menu__link.active {
+    text-decoration: none;
+  }
   .primary-menu__link:hover::after, .primary-menu__link:focus::after, .primary-menu__link.active::after {
     content: '';
     display: block;
