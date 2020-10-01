@@ -154,6 +154,7 @@ a,
 a:visited {
   text-decoration: none;
   color: inherit;
+  font-weight: 700;
 }
 
 a:hover, a:focus, a:active,
@@ -457,6 +458,20 @@ ul.article-list {
 
 .article-single footer .btn {
   margin-top: 1em;
+}
+
+.treatment-page {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 3em;
+}
+
+.treatment-category:first-child {
+  margin-top: 2.5rem;
+}
+
+.treatment-item a {
+  font-weight: 300;
 }
 
 .map {
