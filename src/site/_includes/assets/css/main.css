@@ -168,6 +168,13 @@ a:visited:active {
   text-underline-offset: 3px;
 }
 
+.skip-link:focus {
+  position: relative;
+  clip: unset;
+  height: auto;
+  width: auto;
+}
+
 table {
   margin-top: 2rem;
   margin-bottom: 3rem;
