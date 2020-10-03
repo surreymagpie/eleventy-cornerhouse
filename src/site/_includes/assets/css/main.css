@@ -93,7 +93,7 @@ select {
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  color: #2d364d;
+  color: #171c29;
 }
 
 article > * + * {
@@ -398,6 +398,54 @@ thead {
     bottom: 0;
     animation: expand 800ms;
   }
+}
+
+.site__footer {
+  background-color: #171c29;
+  color: #e5e5e5;
+  padding: 3rem 0;
+}
+
+.block-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.footer-block {
+  flex-grow: 1;
+}
+
+.footer-block h2 {
+  margin: 0 0 1.5rem;
+}
+
+.opening-times {
+  width: 100%;
+  margin: 0.75rem 0 0;
+}
+
+.opening-times td {
+  color: #e5e5e5;
+}
+
+.day {
+  text-align: left;
+}
+
+.time {
+  text-align: center;
+}
+
+.footer-menu__link {
+  font-weight: 300;
+}
+
+.colophon {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 3rem;
 }
 
 .featured-image__container {
