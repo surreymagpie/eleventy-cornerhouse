@@ -34,14 +34,15 @@
     position: fixed
     top: 0
     right: -20rem
-    z-index: 3
+    z-index: 2000
     background-color: #fff
     transition: right 450ms ease-in-out
 
     &.primary-menu--open
       right: 0
 
-.primary-menu__link
+.primary-menu__link,
+.primary-menu__link:visited
   display: inline-block
   padding: 1rem
   position: relative
@@ -63,7 +64,7 @@
   width: 32px
   cursor: pointer
   background-color: transparent
-  z-index: 4
+  z-index: 2001
 
   &:focus
     outline: none
