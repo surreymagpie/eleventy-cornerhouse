@@ -534,6 +534,48 @@ ul.article-list {
   width: 100vw;
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+}
+
+.pagination li {
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  border-left: 1px solid #cccccc;
+}
+
+.pagination li:last-child {
+  border-right: 1px solid #cccccc;
+}
+
+.pagination__link {
+  display: block;
+  padding: .5em .75em;
+  font-weight: 400;
+  text-align: center;
+}
+
+.current .pagination__link {
+  font-weight: 700;
+}
+
+.pagination__page {
+  display: none;
+  width: 2.5rem;
+}
+
+.pagination__page.current {
+  display: block;
+}
+
+@media screen and (min-width: 600px) {
+  .pagination__page {
+    display: block;
+  }
+}
+
 /**
  * TRUMPS
  * Text.................Text helpers.
