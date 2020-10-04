@@ -204,10 +204,6 @@ thead {
   max-width: 1044px;
 }
 
-.container--wide {
-  max-width: 1440px;
-}
-
 .sr-only {
   position: absolute;
   overflow: hidden;
