@@ -241,12 +241,12 @@ thead {
   text-transform: uppercase;
 }
 
-.btn-primary {
+.btn-primary, .btn-primary:visited {
   background-color: #5080f0;
   color: #fff;
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary:visited:hover {
   background-color: #7b9ff3;
 }
 
@@ -494,6 +494,9 @@ ul.article-list {
 .article-single {
   display: flex;
   flex-direction: column;
+  padding: 1.5rem;
+  background-color: #f7f7f7;
+  border-radius: 1em;
 }
 
 .article-single h2 {
