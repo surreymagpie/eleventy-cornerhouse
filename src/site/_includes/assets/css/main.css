@@ -242,12 +242,13 @@ thead {
 }
 
 .btn-primary, .btn-primary:visited {
-  background-color: #5080f0;
+  background-color: #3c4e78;
   color: #fff;
 }
 
 .btn-primary:hover, .btn-primary:visited:hover {
-  background-color: #7b9ff3;
+  background-color: #5080f0;
+  text-decoration: none;
 }
 
 .site__header {
