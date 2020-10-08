@@ -1,0 +1,38 @@
+.pagination
+  display: flex
+  justify-content: center
+  font-size: 13px
+
+  li
+    border-top: 1px solid $clr-grey-20
+    border-bottom: 1px solid $clr-grey-20
+    border-left: 1px solid $clr-grey-20
+
+    &:last-child
+      border-right: 1px solid $clr-grey-20
+
+  &__link
+    display: block
+    padding: .5em .75em
+    font-weight: 400
+    text-align: center
+
+    .current &
+      font-weight: 700
+
+  &__page
+    display: none
+    width: 2.5rem
+
+    &.current
+      display: block
+
+    @media screen and (min-width: 600px)
+      display: block
+
+.post-navigation
+  display: flex
+  flex-wrap: wrap
+
+.prev-post
+  margin-left: auto

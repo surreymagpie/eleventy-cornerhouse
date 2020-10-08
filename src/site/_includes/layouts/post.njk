@@ -5,12 +5,24 @@
         {% include 'layouts/responsive-image.njk' %}
     {% endif%}
   <main id="main-content" class="main-content container">
-  <article>
-    <header class="article-header">
-    <h1>{{ title }}</h1>
-    <small class="small">Posted by {{ author }} on <time datetime="{{- date | machineDate -}}">{{- date | humanDate -}}</time></small>
-    </header>
-    {{- content | safe }}
-  </article>
+    <article>
+      <header class="article-header">
+      <h1>{{ title }}</h1>
+      <small class="small">Posted by {{ author }} on <time datetime="{{- date | machineDate -}}">{{- date | humanDate -}}</time></small>
+      </header>
+      {{- content | safe }}
+    </article>
+
+    <hr>
+    <ul class="post-navigation">
+      {%- set nextPost = collections.news | getNextCollectionItem(page) %}
+      {%- set previousPost = collections.news | getPreviousCollectionItem(page) %}
+      {%- if nextPost %}
+      <li class="next-post">&laquo;&nbsp;<a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></li>
+      {% endif -%}
+      {%- if previousPost -%}
+      <li class="prev-post"><a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a>&nbsp;&raquo;</li>
+      {%- endif %}
+    </ul>
   </main>
 {% endblock %}

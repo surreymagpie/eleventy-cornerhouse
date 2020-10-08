@@ -100,6 +100,11 @@ article > * + * {
   margin-top: 1em;
 }
 
+article + hr {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 h1,
 h2,
 h3,
@@ -236,13 +241,14 @@ thead {
   text-transform: uppercase;
 }
 
-.btn-primary {
-  background-color: #5080f0;
+.btn-primary, .btn-primary:visited {
+  background-color: #3c4e78;
   color: #fff;
 }
 
-.btn-primary:hover {
-  background-color: #7b9ff3;
+.btn-primary:hover, .btn-primary:visited:hover {
+  background-color: #5080f0;
+  text-decoration: none;
 }
 
 .site__header {
@@ -489,6 +495,9 @@ ul.article-list {
 .article-single {
   display: flex;
   flex-direction: column;
+  padding: 1.5rem;
+  background-color: #f7f7f7;
+  border-radius: 1em;
 }
 
 .article-single h2 {
@@ -532,6 +541,57 @@ ul.article-list {
 
 .map-wrapper {
   width: 100vw;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+}
+
+.pagination li {
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  border-left: 1px solid #cccccc;
+}
+
+.pagination li:last-child {
+  border-right: 1px solid #cccccc;
+}
+
+.pagination__link {
+  display: block;
+  padding: .5em .75em;
+  font-weight: 400;
+  text-align: center;
+}
+
+.current .pagination__link {
+  font-weight: 700;
+}
+
+.pagination__page {
+  display: none;
+  width: 2.5rem;
+}
+
+.pagination__page.current {
+  display: block;
+}
+
+@media screen and (min-width: 600px) {
+  .pagination__page {
+    display: block;
+  }
+}
+
+.post-navigation {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.prev-post {
+  margin-left: auto;
 }
 
 /**

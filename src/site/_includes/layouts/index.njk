@@ -1,14 +1,24 @@
+---
+pagination:
+  data: collections.news
+  size: 3
+  reverse: true
+permalink: "news/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}" #}
+---
+
 {% extends "layouts/base.njk" %}
 
 {% block content %}
   <main id="main-content" class="main-content container">
-  <h1>{{ title }}</h1>
+  <article>
+    <h1>{{ title }}</h1>
 
-  {{- content | safe }}
+    {{- content | safe }}
+  </article>
 
   <ul class="article-list">
-  
-  {% for item in collections.news | reverse %}
+
+  {% for item in pagination.items %}
     <li class="article-single">
       <header>
         <h2><a href="{{ item.url }}">{{ item.data.title }}</a></h2>
@@ -22,6 +32,39 @@
   {% endfor %}
 
   </ul>
+
+  <nav aria-labelledby="pagination">
+    <h2 id="pagination" class="sr-only">News Pagination</h2>
+    <ol class="pagination">
+
+      <li class="pagination__first">
+        <a class="pagination__link" title="First" href="{{ pagination.href.first }}">&laquo;&nbsp;First</a>
+      </li>
+
+      <li class="pagination__prev">
+        <a class="pagination__link" title="Previous" href="{{ pagination.href.previous }}">&lsaquo;&nbsp;Prev</a>
+      </li>
+
+      {% for pageEntry in pagination.pages %}
+      <li class="pagination__page{%- if page.url == pagination.hrefs[ loop.index0 ] %} current">
+        <span class="pagination__link" aria-current="page">{{- loop.index0 + 1 }}</span>
+        {%- else -%}">
+        <a class="pagination__link" href="{{ pagination.hrefs[ loop.index0 ] }}">
+        {{- loop.index0 + 1 }}</a>
+        {%- endif %}
+      </li>
+      {% endfor %}
+
+      <li class="pagination__next">
+        <a class="pagination__link" title="Next" href="{{ pagination.href.next }}">Next&nbsp;&rsaquo;</a>
+      </li>
+
+      <li class="pagination__last">
+        <a class="pagination__link" title="Last" href="{{ pagination.href.last }}">Last&nbsp;&raquo;</a>
+      </li>
+
+    </ol>
+  </nav>
 
   </main>
 {% endblock %}
