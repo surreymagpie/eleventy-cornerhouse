@@ -46,7 +46,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy({ "src/site/_includes/assets/icons": "." });
-  eleventyConfig.addPassthroughCopy({ "sitemap.xsl": "." });
+  eleventyConfig.addPassthroughCopy("src/site/sitemap.xsl");
 
   return {
     markdownTemplateEngine: "njk",
