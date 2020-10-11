@@ -2,11 +2,11 @@ const CleanCSS = require("clean-css");
 const { DateTime } = require('luxon');
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("cssmin", (code) => {
     return new CleanCSS({}).minify(code).styles;
   });
-  
+
   eleventyConfig.addFilter("humanDate", (date) => {
     dt = DateTime.fromISO(date);
     return dt.setLocale('en-GB').toLocaleString({
@@ -28,24 +28,25 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   eleventyConfig.addCollection("treatmentCategories", collection => {
-      let treatmentCategories = new Map();
+    let treatmentCategories = new Map();
 
-      collection
-        .getFilteredByTag("treatment")
-        .filter( item => {
-          item.data.categories.forEach(category => {
+    collection
+      .getFilteredByTag("treatment")
+      .filter(item => {
+        item.data.categories.forEach(category => {
 
-            if ( ! treatmentCategories.has(category)) {
-              treatmentCategories.set(category, new Array)
-            }
+          if (!treatmentCategories.has(category)) {
+            treatmentCategories.set(category, new Array)
+          }
 
-            treatmentCategories.get(category).push(item);
-          });
+          treatmentCategories.get(category).push(item);
         });
-      return treatmentCategories;
+      });
+    return treatmentCategories;
   });
 
   eleventyConfig.addPassthroughCopy({ "src/site/_includes/assets/icons": "." });
+  eleventyConfig.setTemplateFormats("xsl");
 
   return {
     markdownTemplateEngine: "njk",
