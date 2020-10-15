@@ -594,6 +594,38 @@ ul.article-list {
   margin-left: auto;
 }
 
+.social-menu {
+  display: flex;
+  gap: 1em;
+}
+
+.social-link {
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.social-link--facebook {
+  fill: #1877F2;
+  background-image: url("/facebook.svg");
+}
+
+.social-link--twitter {
+  fill: #1DA1F2;
+  background-image: url("/twitter.svg");
+}
+
+.social-link--whatsapp {
+  fill: #25D366;
+  background-image: url("/whatsapp.svg");
+}
+
+.social-link--email {
+  fill: #171c29;
+  background-image: url("/email.svg");
+}
+
 /**
  * TRUMPS
  * Text.................Text helpers.

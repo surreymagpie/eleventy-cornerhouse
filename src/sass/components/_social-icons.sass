@@ -1,0 +1,14 @@
+.social-menu
+  display: flex
+  gap: 1em
+
+.social-link
+  display: block
+  position: relative
+  width: 24px
+  height: 24px
+
+@each $site, $clr in $socials
+  .social-link--#{$site}
+    fill: #{$clr}
+    background-image: url('/#{$site}.svg')
