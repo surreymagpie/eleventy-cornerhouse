@@ -20,6 +20,10 @@ module.exports = function (eleventyConfig) {
     return dt = DateTime.fromISO(date);
   });
 
+  eleventyConfig.addFilter("encodeURI", (string) => {
+    return encodeURI(string);
+  });
+
   eleventyConfig.setFrontMatterParsingOptions({
     excerpt_separator: "<!-- excerpt -->",
     excerpt: true
