@@ -600,30 +600,29 @@ ul.article-list {
 }
 
 .social-link {
-  display: block;
+  display: flex;
   position: relative;
+}
+
+.social-link svg {
   width: 24px;
   height: 24px;
 }
 
 .social-link--facebook {
   fill: #1877F2;
-  background-image: url("/facebook.svg");
 }
 
 .social-link--twitter {
   fill: #1DA1F2;
-  background-image: url("/twitter.svg");
 }
 
 .social-link--whatsapp {
   fill: #25D366;
-  background-image: url("/whatsapp.svg");
 }
 
 .social-link--email {
   fill: #171c29;
-  background-image: url("/email.svg");
 }
 
 /**
