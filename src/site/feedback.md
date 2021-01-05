@@ -3,6 +3,7 @@ title: Feedback
 eleventyNavigation:
   key: Feedback
   order: 4
+description: "How to provide feedback on our services"
 ---
 We believe we have built a great reputation locally through treating people kindly, honestly and involving them in decisions about their treatment. We encourage any patients to let us know their views so that we may continue to provide a first-class service to them. 
 

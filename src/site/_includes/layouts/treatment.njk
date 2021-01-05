@@ -5,6 +5,7 @@
     <article>
       <h1>{{ title }}</h1>
       {{- content | safe }}
+    {% include 'layouts/social.njk'%}
     </article>
 
     <aside class="treatment-list">

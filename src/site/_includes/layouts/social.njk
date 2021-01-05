@@ -1,0 +1,54 @@
+<div class="social-links">
+  <div>
+    <a
+      class="social-link social-link--facebook"
+      rel="nofollow noreferrer"
+      target="_blank"
+      title="Share on Facebook"
+      href="https://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url }}">
+      <svg>
+        <use href="/icons.svg#facebook" />
+      </svg>
+      <span class="sr-only">Share on Facebook</span>
+    </a>
+  </div>
+  <div>
+    <a
+      class="social-link social-link--twitter"
+      rel="nofollow noreferrer"
+      target="_blank"
+      title="Share on twitter"
+      href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ description | encodeURI }}&hashtags=dentistry">
+      <svg>
+        <use href="/icons.svg#twitter" />
+      </svg>
+      <span class="sr-only">Share on Twitter</span>
+    </a>
+  </div>
+  <div>
+    <a
+      class="social-link social-link--whatsapp"
+      rel="nofollow noreferrer"
+      href="whatsapp://send?text={{ title | encodeURI }}%20{{ site.url }}{{ page.url }}"
+      target="_blank"
+      title="Whatsapp this page">
+      <svg>
+        <use href="/icons.svg#whatsapp" />
+      </svg>
+      <span class="sr-only">Whatsapp this page</span>
+    </a>
+  </div>
+  <div>
+    <a
+      class="social-link social-link--email"
+      rel="nofollow noreferrer"
+      target="_blank" 
+      title="Share by email"
+      href="mailto:?subject={{ title | encodeURI }}&amp;body={{ title | encodeURI }}%0A{{ site.url }}{{ page.url }}">
+      <svg>
+        <use href="/icons.svg#email" />
+      </svg>
+      <span class="sr-only">Share by email</span>
+    </a>
+  </div>
+</div>

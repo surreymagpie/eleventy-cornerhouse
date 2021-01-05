@@ -11,6 +11,9 @@
       <small class="small">Posted by {{ author }} on <time datetime="{{- date | machineDate -}}">{{- date | humanDate -}}</time></small>
       </header>
       {{- content | safe }}
+      <footer>
+      {% include 'layouts/social.njk'%}
+      </footer>
     </article>
 
     <hr>

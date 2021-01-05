@@ -33,6 +33,8 @@ permalink: "news/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 
 
   </ul>
 
+  {% include 'layouts/social.njk'%}
+
   <nav aria-labelledby="pagination">
     <h2 id="pagination" class="sr-only">News Pagination</h2>
     <ol class="pagination">

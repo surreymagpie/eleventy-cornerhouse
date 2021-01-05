@@ -1,6 +1,8 @@
 ---
 title: "New NHS Charges"
 date: "2014-04-01"
+page:
+  excerpt: "New patient charges from 1 April 2014"
 ---
 
 It's that time of year again when the fees rise.

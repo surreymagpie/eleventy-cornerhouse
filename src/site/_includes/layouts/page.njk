@@ -8,6 +8,9 @@
   <article>
     <h1>{{ title }}</h1>
     {{- content | safe }}
+    <footer>
+    {% include 'layouts/social.njk'%}
+    </footer>
   </article>
   </main>
 {% endblock %}
