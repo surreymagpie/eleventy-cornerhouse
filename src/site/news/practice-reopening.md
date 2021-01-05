@@ -1,6 +1,7 @@
 ---
 title: "Practice Reopening"
 date: "2020-07-07"
+description: "The practice has reopened after the closure enforced by the coronavirus pandemic."
 ---
 
 **Updated: 6 August 2020**
