@@ -9,7 +9,7 @@ We believe we have built a great reputation locally through treating people kind
 
 If you are **pleased** with our service, please let the world know by leaving a review on one or more of the following websites. It should only take a few minutes of your time and would help direct patients looking for a good practice find out about us.
 
-1. [NHS choices](https://www.nhs.uk/Services/dentists/LeaveReview/DefaultView.aspx?id=V02129)
+1. [NHS choices](https://www.nhs.uk/services/dentist/cornerhouse-dental-practice/V002129/leave-a-review)
 2. [Facebook](https://www.facebook.com/CornerhouseDentalPracticeLtd/reviews)
 3. [Google](https://business.google.com/u/0/b/100722129947282950070/reviews/l/06126064141133034194)
 
