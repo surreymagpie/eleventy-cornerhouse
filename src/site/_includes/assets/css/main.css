@@ -522,13 +522,17 @@ ul.article-list {
 }
 
 .treatment-page {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 3em;
 }
 
-.treatment-category:first-child {
-  margin-top: 2.5rem;
+.treatment-content {
+  flex: 1 0 70%;
+}
+
+.treatment-list {
+  padding-top: 1rem;
 }
 
 .treatment-item a {
