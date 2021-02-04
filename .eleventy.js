@@ -1,6 +1,7 @@
 const CleanCSS = require("clean-css");
 const { DateTime } = require('luxon');
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const fs = require("fs");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("cssmin", (code) => {
@@ -51,6 +52,22 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({ "src/site/_includes/assets/icons": "." });
   eleventyConfig.addPassthroughCopy("src/site/sitemap.xsl");
+
+  eleventyConfig.setBrowserSyncConfig({
+    callbacks: {
+      ready: function(err, bs) {
+
+        bs.addMiddleware("*", (req, res) => {
+          const content_404 = fs.readFileSync('dist/404.html');
+          // Add 404 http status code in request header.
+          res.writeHead(404, { "Content-Type": "text/html; charset=UTF-8" });
+          // Provides the 404 content without redirect.
+          res.write(content_404);
+          res.end();
+        });
+      }
+    }
+  });
 
   return {
     markdownTemplateEngine: "njk",
